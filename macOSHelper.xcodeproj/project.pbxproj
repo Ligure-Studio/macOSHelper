@@ -14,6 +14,7 @@
 		C456254129AB772300D2B494 /* macOSHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C456254029AB772300D2B494 /* macOSHelperTests.swift */; };
 		C456254B29AB772300D2B494 /* macOSHelperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C456254A29AB772300D2B494 /* macOSHelperUITests.swift */; };
 		C456254D29AB772300D2B494 /* macOSHelperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C456254C29AB772300D2B494 /* macOSHelperUITestsLaunchTests.swift */; };
+		C47BD7CA29B43C1B00CE1646 /* Func.swift in Sources */ = {isa = PBXBuildFile; fileRef = C47BD7C929B43C1B00CE1646 /* Func.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		C456254629AB772300D2B494 /* macOSHelperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = macOSHelperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C456254A29AB772300D2B494 /* macOSHelperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSHelperUITests.swift; sourceTree = "<group>"; };
 		C456254C29AB772300D2B494 /* macOSHelperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = macOSHelperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C47BD7C929B43C1B00CE1646 /* Func.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Func.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				C456253229AB772300D2B494 /* Assets.xcassets */,
 				C456253429AB772300D2B494 /* Main.storyboard */,
 				C456253729AB772300D2B494 /* macOSHelper.entitlements */,
+				C47BD7C929B43C1B00CE1646 /* Func.swift */,
 			);
 			path = macOSHelper;
 			sourceTree = "<group>";
@@ -251,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C47BD7CA29B43C1B00CE1646 /* Func.swift in Sources */,
 				C456253129AB772200D2B494 /* ViewController.swift in Sources */,
 				C456252F29AB772200D2B494 /* AppDelegate.swift in Sources */,
 			);

@@ -121,7 +121,7 @@
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Ig7-aF-Ltk">
                                 <rect key="frame" x="238" y="300" width="165" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Ypl-NE-iYF"/>
+                                    <constraint firstAttribute="height" constant="50" id="sFu-u5-Zav"/>
                                 </constraints>
                                 <textFieldCell key="cell" selectable="YES" title="全部来源" id="kwK-LC-u1k">
                                     <font key="font" metaFont="systemBold" size="40"/>
@@ -140,7 +140,7 @@
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EvT-zX-p62">
                                 <rect key="frame" x="176" y="200" width="289" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="IeZ-qK-dH5"/>
+                                    <constraint firstAttribute="height" constant="20" id="ZJL-6L-bKv"/>
                                 </constraints>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="仍提示损坏的请移步 App已损坏 板块" id="QA8-SG-RkA">
                                     <font key="font" textStyle="title2" name=".SFNS-Regular"/>
@@ -148,35 +148,70 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ack-zG-F9A">
-                                <rect key="frame" x="172" y="60" width="112" height="40"/>
-                                <buttonCell key="cell" type="push" title="开启全部来源" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="hoY-4g-OOI">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-PU-w5F" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="365" y="52" width="141" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="yfT-CO-XQV"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" title="关闭全部来源" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6R3-5w-nTK">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 </buttonCell>
-                                <color key="bezelColor" name="AccentColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                        <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="关闭全部来源:" target="lnN-pi-Urc" id="BwS-lm-Mli"/>
+                                </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ku4-la-KlR">
-                                <rect key="frame" x="357" y="60" width="112" height="40"/>
-                                <buttonCell key="cell" type="push" title="关闭全部来源" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="97g-Mh-QNy">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QOj-hz-XD8" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="146" y="52" width="141" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="A6D-S0-T5I"/>
+                                    <constraint firstAttribute="height" constant="50" id="mN0-RN-RqZ"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" title="开启全部来源" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cDm-Ae-lS0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
                                 </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                        <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="开启全部来源:" target="lnN-pi-Urc" id="Zny-wr-BaC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ku4-la-KlR" secondAttribute="trailing" constant="177" id="3Ij-ih-Uj3"/>
-                            <constraint firstItem="EvT-zX-p62" firstAttribute="top" secondItem="YVY-hI-9vC" secondAttribute="bottom" constant="20" id="B1y-dC-QSh"/>
-                            <constraint firstItem="EvT-zX-p62" firstAttribute="trailing" secondItem="ku4-la-KlR" secondAttribute="trailing" id="Ff7-iy-D2Y"/>
-                            <constraint firstItem="ack-zG-F9A" firstAttribute="baseline" secondItem="ku4-la-KlR" secondAttribute="baseline" id="VIa-Lz-hgy"/>
-                            <constraint firstItem="ku4-la-KlR" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ack-zG-F9A" secondAttribute="trailing" constant="12" symbolic="YES" id="Wsy-j3-jFQ"/>
-                            <constraint firstAttribute="bottom" secondItem="ack-zG-F9A" secondAttribute="bottom" constant="66" id="Xfw-Lo-vx1"/>
-                            <constraint firstItem="ack-zG-F9A" firstAttribute="leading" secondItem="EvT-zX-p62" secondAttribute="leading" id="dCa-wF-as2"/>
-                            <constraint firstItem="Ig7-aF-Ltk" firstAttribute="centerX" secondItem="YVY-hI-9vC" secondAttribute="centerX" id="enk-Rk-eP0"/>
-                            <constraint firstItem="YVY-hI-9vC" firstAttribute="centerX" secondItem="gv3-Xw-NeT" secondAttribute="centerX" id="exq-qd-HmJ"/>
-                            <constraint firstItem="YVY-hI-9vC" firstAttribute="top" secondItem="Ig7-aF-Ltk" secondAttribute="bottom" constant="40" id="jBW-8M-Me7"/>
-                            <constraint firstItem="Ig7-aF-Ltk" firstAttribute="top" secondItem="gv3-Xw-NeT" secondAttribute="top" constant="50" id="krO-Wt-gbB"/>
-                            <constraint firstItem="YVY-hI-9vC" firstAttribute="leading" secondItem="gv3-Xw-NeT" secondAttribute="leading" constant="82" id="xiz-zx-4OJ"/>
+                            <constraint firstItem="Ig7-aF-Ltk" firstAttribute="centerX" secondItem="YVY-hI-9vC" secondAttribute="centerX" id="05M-Lf-i8F"/>
+                            <constraint firstItem="EvT-zX-p62" firstAttribute="top" secondItem="YVY-hI-9vC" secondAttribute="bottom" constant="20" id="0OA-hn-5LD"/>
+                            <constraint firstItem="Ig7-aF-Ltk" firstAttribute="centerX" secondItem="gv3-Xw-NeT" secondAttribute="centerX" id="4zV-Ce-tFx"/>
+                            <constraint firstAttribute="trailing" secondItem="gMI-PU-w5F" secondAttribute="trailing" constant="136" id="Ks6-zh-Mou"/>
+                            <constraint firstItem="YVY-hI-9vC" firstAttribute="top" secondItem="Ig7-aF-Ltk" secondAttribute="bottom" constant="40" id="QOM-1M-Bck"/>
+                            <constraint firstItem="QOj-hz-XD8" firstAttribute="leading" secondItem="gv3-Xw-NeT" secondAttribute="leading" constant="148" id="dNO-Wm-u5i"/>
+                            <constraint firstItem="QOj-hz-XD8" firstAttribute="top" secondItem="EvT-zX-p62" secondAttribute="bottom" constant="95" id="eJI-SM-wKq"/>
+                            <constraint firstItem="QOj-hz-XD8" firstAttribute="firstBaseline" secondItem="gMI-PU-w5F" secondAttribute="firstBaseline" id="iUO-eI-GtT"/>
+                            <constraint firstItem="QOj-hz-XD8" firstAttribute="baseline" secondItem="gMI-PU-w5F" secondAttribute="baseline" id="juz-Lu-B06"/>
+                            <constraint firstItem="Ig7-aF-Ltk" firstAttribute="top" secondItem="gv3-Xw-NeT" secondAttribute="top" constant="50" id="o0X-B6-qzA"/>
+                            <constraint firstItem="YVY-hI-9vC" firstAttribute="centerX" secondItem="EvT-zX-p62" secondAttribute="centerX" id="ppg-No-XcW"/>
+                            <constraint firstItem="gMI-PU-w5F" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QOj-hz-XD8" secondAttribute="trailing" constant="8" symbolic="YES" id="tdJ-Vn-USz"/>
+                            <constraint firstItem="YVY-hI-9vC" firstAttribute="leading" secondItem="gv3-Xw-NeT" secondAttribute="leading" constant="82" id="vMg-bh-Ycx"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -193,51 +228,67 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="MrM-iH-kEu">
-                                <rect key="frame" x="183" y="240" width="274" height="20"/>
+                                <rect key="frame" x="183" y="241" width="274" height="20"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="270" id="QdM-YS-lcY"/>
-                                    <constraint firstAttribute="height" constant="20" id="beW-rI-OCq"/>
+                                    <constraint firstAttribute="width" constant="270" id="cVx-9w-kJK"/>
                                 </constraints>
                                 <textFieldCell key="cell" selectable="YES" title="开启全部来源后,若仍不能正常打开" id="r8c-L5-1BT">
-                                    <font key="font" size="17" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system" size="17"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pQS-z0-ewy">
-                                <rect key="frame" x="203" y="200" width="235" height="21"/>
+                                <rect key="frame" x="203" y="202" width="234" height="20"/>
                                 <textFieldCell key="cell" lineBreakMode="clipping" title="点击按钮,选择无法运行的应用" id="jtR-JF-7lS">
-                                    <font key="font" size="17" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system" size="17"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="mO5-l7-gWg">
-                                <rect key="frame" x="250" y="56" width="140" height="40"/>
-                                <buttonCell key="cell" type="push" title="解决“已损坏”问题" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="aqL-jt-TLP">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
-                                <color key="bezelColor" name="AccentColor"/>
-                            </button>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="v75-7S-QHw">
-                                <rect key="frame" x="177" y="300" width="286" height="48"/>
+                                <rect key="frame" x="177" y="301" width="286" height="47"/>
                                 <textFieldCell key="cell" selectable="YES" title="解决已损坏问题" id="1Xh-rd-YGw">
-                                    <font key="font" size="40" name=".PingFangSC-Semibold"/>
+                                    <font key="font" metaFont="systemBold" size="40"/>
                                     <color key="textColor" name="linkColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6G2-Cd-r6y" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="250" y="60" width="141" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ThW-GB-r6j"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="Vtm-tt-JOs"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" title="解决“已损坏”问题" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ltk-RD-G9z">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                        <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="解决已损坏问题:" target="oZZ-K1-QBX" id="Y9O-CP-8A2"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="MrM-iH-kEu" firstAttribute="centerX" secondItem="pQS-z0-ewy" secondAttribute="centerX" id="PKq-Hy-GHT"/>
-                            <constraint firstItem="v75-7S-QHw" firstAttribute="top" secondItem="4pX-yx-Hve" secondAttribute="top" constant="52" id="Soz-Fy-7rz"/>
-                            <constraint firstItem="mO5-l7-gWg" firstAttribute="centerX" secondItem="pQS-z0-ewy" secondAttribute="centerX" id="Ttw-sD-0xJ"/>
-                            <constraint firstItem="pQS-z0-ewy" firstAttribute="top" secondItem="MrM-iH-kEu" secondAttribute="bottom" constant="19" id="WsK-UD-OXm"/>
-                            <constraint firstAttribute="bottom" secondItem="mO5-l7-gWg" secondAttribute="bottom" constant="62" id="dii-09-Zg6"/>
-                            <constraint firstItem="MrM-iH-kEu" firstAttribute="centerX" secondItem="v75-7S-QHw" secondAttribute="centerX" id="gfO-7w-fm9"/>
-                            <constraint firstItem="mO5-l7-gWg" firstAttribute="centerX" secondItem="4pX-yx-Hve" secondAttribute="centerX" id="okB-eC-zE0"/>
-                            <constraint firstItem="MrM-iH-kEu" firstAttribute="top" secondItem="v75-7S-QHw" secondAttribute="bottom" constant="40" id="vZL-gt-vj7"/>
+                            <constraint firstItem="MrM-iH-kEu" firstAttribute="top" secondItem="v75-7S-QHw" secondAttribute="bottom" constant="40" id="125-dj-fDe"/>
+                            <constraint firstItem="v75-7S-QHw" firstAttribute="centerX" secondItem="MrM-iH-kEu" secondAttribute="centerX" id="4G1-fm-avV"/>
+                            <constraint firstItem="v75-7S-QHw" firstAttribute="top" secondItem="4pX-yx-Hve" secondAttribute="top" constant="52" id="DOI-rF-x8F"/>
+                            <constraint firstItem="pQS-z0-ewy" firstAttribute="top" secondItem="MrM-iH-kEu" secondAttribute="bottom" constant="19" id="GSF-KI-B3L"/>
+                            <constraint firstItem="pQS-z0-ewy" firstAttribute="centerX" secondItem="6G2-Cd-r6y" secondAttribute="centerX" id="XEb-Yd-Ezj"/>
+                            <constraint firstItem="MrM-iH-kEu" firstAttribute="centerX" secondItem="pQS-z0-ewy" secondAttribute="centerX" id="fBy-QD-b9S"/>
+                            <constraint firstItem="v75-7S-QHw" firstAttribute="centerX" secondItem="4pX-yx-Hve" secondAttribute="centerX" id="iVW-Ua-CX2"/>
+                            <constraint firstItem="6G2-Cd-r6y" firstAttribute="top" secondItem="pQS-z0-ewy" secondAttribute="bottom" constant="89" id="jO9-MV-Nuh"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -252,6 +303,92 @@
                     <view key="view" id="pm8-9C-D2v">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-cp-7iS" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="84" y="172" width="472" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="1ig-ae-k9i"/>
+                                    <constraint firstAttribute="height" constant="50" id="sfd-Qt-JuA"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" title="取消四位密码限制" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nvh-ye-uD0">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="20"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                        <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="取消四位密码限制:" target="ZRI-D9-lqI" id="tT1-ZQ-2QU"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5MU-45-FMd" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="84" y="66" width="472" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="6cf-FW-Svz"/>
+                                    <constraint firstAttribute="height" constant="50" id="Pim-f3-GjM"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" title="重置Dock(仅在出现异常时需要使用)" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pjd-mn-i9z">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="20" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="重置Dock:" target="ZRI-D9-lqI" id="XIs-jX-ud6"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cgo-2b-AHD" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="84" y="278" width="472" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GkK-hw-7S4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="fIF-gb-VhS"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" title="复制HomeBrew安装命令" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="l4J-dM-6xV">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="20" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                        <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="复制HomeBrew安装命令:" target="ZRI-D9-lqI" id="Ebt-Xj-eNv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Cgo-2b-AHD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eEt-cp-7iS" secondAttribute="leading" id="4CH-eA-PVd"/>
+                            <constraint firstItem="5MU-45-FMd" firstAttribute="top" secondItem="eEt-cp-7iS" secondAttribute="bottom" constant="56" id="8aK-Sa-MV2"/>
+                            <constraint firstItem="eEt-cp-7iS" firstAttribute="leading" secondItem="5MU-45-FMd" secondAttribute="leading" id="FwG-A4-xoW"/>
+                            <constraint firstItem="Cgo-2b-AHD" firstAttribute="leading" secondItem="pm8-9C-D2v" secondAttribute="leading" constant="86" id="JLB-DO-wTq"/>
+                            <constraint firstItem="eEt-cp-7iS" firstAttribute="top" secondItem="Cgo-2b-AHD" secondAttribute="bottom" constant="56" id="MoN-C5-hof"/>
+                            <constraint firstItem="Cgo-2b-AHD" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eEt-cp-7iS" secondAttribute="trailing" id="Vmo-cX-qdm"/>
+                            <constraint firstItem="Cgo-2b-AHD" firstAttribute="centerX" secondItem="pm8-9C-D2v" secondAttribute="centerX" id="jFF-Pa-Lgj"/>
+                            <constraint firstItem="eEt-cp-7iS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cgo-2b-AHD" secondAttribute="trailing" id="mLH-hf-nEC"/>
+                            <constraint firstItem="eEt-cp-7iS" firstAttribute="centerY" secondItem="pm8-9C-D2v" secondAttribute="centerY" id="mbH-BP-a25"/>
+                            <constraint firstItem="eEt-cp-7iS" firstAttribute="trailing" secondItem="5MU-45-FMd" secondAttribute="trailing" id="r6e-Za-8fd"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="ZRI-D9-lqI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -269,16 +406,15 @@
                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tV0-4m-dLf">
                                 <rect key="frame" x="251" y="237" width="138" height="130"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="138" id="FVJ-IZ-Yuo"/>
-                                    <constraint firstAttribute="height" constant="130" id="GPR-8e-Hm1"/>
+                                    <constraint firstAttribute="width" constant="138" id="8lB-Sb-LRm"/>
                                 </constraints>
                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="icon" id="9r3-zQ-kue"/>
                             </imageView>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="tUs-rY-3aL">
                                 <rect key="frame" x="106" y="117" width="429" height="99"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="425" id="7UY-p0-hhR"/>
-                                    <constraint firstAttribute="height" constant="99" id="keW-ng-LmF"/>
+                                    <constraint firstAttribute="height" constant="99" id="Xwe-E0-Dh6"/>
+                                    <constraint firstAttribute="width" constant="425" id="mIH-rC-uHA"/>
                                 </constraints>
                                 <textFieldCell key="cell" selectable="YES" alignment="center" title="macOS Helper是由 Ligure Studio 开发的一个应用程序，其中包含一些常用的 macOS 命令行脚本，可以帮助您快速执行某些操作。" id="dSi-wL-CqC">
                                     <font key="font" metaFont="system" size="18"/>
@@ -286,22 +422,40 @@
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="YTO-V0-p5m">
-                                <rect key="frame" x="277" y="60" width="86" height="40"/>
-                                <buttonCell key="cell" type="push" title="官方网站" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="OuF-Lj-66m">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O37-y5-gKb" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="237" y="60" width="167" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="qnU-Ok-6H8"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="wRs-mg-ral"/>
+                                </constraints>
+                                <buttonCell key="cell" type="squareTextured" title="官方网站" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Z4h-bt-9er">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system" size="17"/>
                                 </buttonCell>
-                                <color key="bezelColor" name="AccentColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="27"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                        <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="官网:" target="bHT-33-xkP" id="fWE-E5-iAl"/>
+                                </connections>
                             </button>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="tV0-4m-dLf" firstAttribute="centerX" secondItem="7sg-CV-Odh" secondAttribute="centerX" id="11e-At-pls"/>
-                            <constraint firstItem="tUs-rY-3aL" firstAttribute="centerX" secondItem="YTO-V0-p5m" secondAttribute="centerX" id="9Kb-hr-kSP"/>
-                            <constraint firstItem="tV0-4m-dLf" firstAttribute="centerX" secondItem="tUs-rY-3aL" secondAttribute="centerX" id="Ft0-YD-VKB"/>
-                            <constraint firstItem="tV0-4m-dLf" firstAttribute="top" secondItem="7sg-CV-Odh" secondAttribute="top" constant="33" id="MhJ-je-tAt"/>
-                            <constraint firstItem="tUs-rY-3aL" firstAttribute="top" secondItem="tV0-4m-dLf" secondAttribute="bottom" constant="21" id="WqD-ZC-ZNR"/>
-                            <constraint firstItem="YTO-V0-p5m" firstAttribute="top" secondItem="tUs-rY-3aL" secondAttribute="bottom" constant="23" id="aYj-MS-rgT"/>
+                            <constraint firstItem="O37-y5-gKb" firstAttribute="top" secondItem="tUs-rY-3aL" secondAttribute="bottom" constant="8" symbolic="YES" id="4qy-k0-K0Q"/>
+                            <constraint firstItem="tUs-rY-3aL" firstAttribute="centerX" secondItem="7sg-CV-Odh" secondAttribute="centerX" id="7jC-Ie-pz6"/>
+                            <constraint firstItem="tUs-rY-3aL" firstAttribute="top" secondItem="7sg-CV-Odh" secondAttribute="top" constant="184" id="JRw-Io-8KD"/>
+                            <constraint firstItem="tUs-rY-3aL" firstAttribute="top" secondItem="tV0-4m-dLf" secondAttribute="bottom" constant="21" id="O6E-97-NRf"/>
+                            <constraint firstItem="O37-y5-gKb" firstAttribute="centerX" secondItem="tUs-rY-3aL" secondAttribute="centerX" id="RDk-tr-rIf"/>
+                            <constraint firstItem="tV0-4m-dLf" firstAttribute="centerX" secondItem="tUs-rY-3aL" secondAttribute="centerX" id="ZFl-fd-aPf"/>
+                            <constraint firstItem="tV0-4m-dLf" firstAttribute="top" secondItem="7sg-CV-Odh" secondAttribute="top" constant="33" id="zDi-zK-TN1"/>
                         </constraints>
                     </view>
                 </viewController>
