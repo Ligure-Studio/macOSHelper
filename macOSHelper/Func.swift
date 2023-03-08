@@ -80,3 +80,21 @@ public func copyStringToPasteboard(string: String) {
     pboard.declareTypes([.string], owner: nil)  // 2
     pboard.setString(string, forType: .string)  // 3
 }
+
+public func dialog(_ firstButtonName: String, _ secondButtonName: String, _ question: String, _ text: String) -> Bool {
+    let myPopup: NSAlert = NSAlert()
+    myPopup.messageText = question
+    myPopup.informativeText = text
+    myPopup.alertStyle = NSAlert.Style.warning
+    myPopup.addButton(withTitle: firstButtonName)
+    myPopup.addButton(withTitle: secondButtonName)
+    return myPopup.runModal() == NSApplication.ModalResponse.alertFirstButtonReturn
+}
+
+public func alert(_ title: String, _ text: String)
+{
+    let a = NSAlert()
+    a.messageText = title
+    a.informativeText = text
+    a.runModal()
+}

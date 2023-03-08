@@ -86,7 +86,6 @@
                         <tabViewItem label="全部来源" identifier="" image="key.fill" catalog="system" id="7Ew-wg-WSQ"/>
                         <tabViewItem label="App已损坏" identifier="" image="exclamationmark.square.fill" catalog="system" id="YI6-ZG-vu2"/>
                         <tabViewItem label="其他实用功能" image="ellipsis.circle.fill" catalog="system" id="gZY-ZZ-Y5Z"/>
-                        <tabViewItem label="联系我们" image="envelope.badge.fill" catalog="system" id="qsN-dc-b32"/>
                     </tabViewItems>
                     <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
                     <tabView key="tabView" type="noTabsNoBorder" id="vFF-iB-lRj">
@@ -103,7 +102,6 @@
                         <segue destination="8zk-FY-lbE" kind="relationship" relationship="tabItems" id="WP9-4h-NSK"/>
                         <segue destination="V6m-KD-eAC" kind="relationship" relationship="tabItems" id="iu7-A9-7i2"/>
                         <segue destination="SnF-xC-VTI" kind="relationship" relationship="tabItems" id="f1r-Iq-Npe"/>
-                        <segue destination="wlD-QK-5Fb" kind="relationship" relationship="tabItems" id="7md-rs-TrC"/>
                     </connections>
                 </tabViewController>
                 <customObject id="Ckn-f0-kGh" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -149,13 +147,13 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-PU-w5F" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="365" y="52" width="141" height="55"/>
+                                <rect key="frame" x="364" y="51" width="143" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="yfT-CO-XQV"/>
                                 </constraints>
                                 <buttonCell key="cell" type="squareTextured" title="关闭全部来源" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6R3-5w-nTK">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -173,14 +171,14 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QOj-hz-XD8" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="146" y="52" width="141" height="55"/>
+                                <rect key="frame" x="145" y="51" width="143" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="A6D-S0-T5I"/>
                                     <constraint firstAttribute="height" constant="50" id="mN0-RN-RqZ"/>
                                 </constraints>
                                 <buttonCell key="cell" type="squareTextured" title="开启全部来源" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cDm-Ae-lS0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -255,14 +253,14 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6G2-Cd-r6y" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="250" y="60" width="141" height="55"/>
+                                <rect key="frame" x="249" y="59" width="143" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ThW-GB-r6j"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="Vtm-tt-JOs"/>
                                 </constraints>
                                 <buttonCell key="cell" type="squareTextured" title="解决“已损坏”问题" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ltk-RD-G9z">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="13" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -305,7 +303,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-cp-7iS" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="84" y="172" width="472" height="55"/>
+                                <rect key="frame" x="83" y="171" width="474" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="1ig-ae-k9i"/>
                                     <constraint firstAttribute="height" constant="50" id="sfd-Qt-JuA"/>
@@ -330,14 +328,14 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5MU-45-FMd" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="84" y="66" width="472" height="55"/>
+                                <rect key="frame" x="83" y="65" width="474" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="6cf-FW-Svz"/>
                                     <constraint firstAttribute="height" constant="50" id="Pim-f3-GjM"/>
                                 </constraints>
                                 <buttonCell key="cell" type="squareTextured" title="重置Dock(仅在出现异常时需要使用)" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pjd-mn-i9z">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="20" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system" size="20"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -352,14 +350,14 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cgo-2b-AHD" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="84" y="278" width="472" height="55"/>
+                                <rect key="frame" x="83" y="277" width="474" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GkK-hw-7S4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="fIF-gb-VhS"/>
                                 </constraints>
                                 <buttonCell key="cell" type="squareTextured" title="复制HomeBrew安装命令" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="l4J-dM-6xV">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" size="20" name=".PingFangSC-Regular"/>
+                                    <font key="font" metaFont="system" size="20"/>
                                 </buttonCell>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
@@ -423,7 +421,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O37-y5-gKb" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="237" y="60" width="167" height="51"/>
+                                <rect key="frame" x="236" y="59" width="169" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="qnU-Ok-6H8"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="wRs-mg-ral"/>
@@ -463,24 +461,10 @@
             </objects>
             <point key="canvasLocation" x="-1156" y="1417"/>
         </scene>
-        <!--联系我们-->
-        <scene sceneID="eW0-Ef-JU0">
-            <objects>
-                <viewController title="联系我们" id="wlD-QK-5Fb" sceneMemberID="viewController">
-                    <view key="view" id="egJ-C4-gYz">
-                        <rect key="frame" x="0.0" y="0.0" width="640" height="400"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="ZOu-eR-2k9" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1427" y="1417"/>
-        </scene>
     </scenes>
     <resources>
         <image name="NSHomeTemplate" width="24" height="21"/>
         <image name="ellipsis.circle.fill" catalog="system" width="15" height="15"/>
-        <image name="envelope.badge.fill" catalog="system" width="18" height="15"/>
         <image name="exclamationmark.square.fill" catalog="system" width="15" height="14"/>
         <image name="icon" width="512" height="512"/>
         <image name="key.fill" catalog="system" width="12" height="18"/>
