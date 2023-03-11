@@ -61,8 +61,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func 重置Dock(_ sender: NSButton) {
         if (dialog("确定", "取消", "警告⚠️！", "是否确认重置？此操作会将Dock恢复为出厂设置"))
         {
-            print("yes")
-            //runScript("do shell script \"defaults delete com.apple.dock; killall Dock\" with administrator privileges")
+            runScript("do shell script \"defaults delete com.apple.dock; killall Dock\" with administrator privileges")
             alert("已重置！", "✅")
         }
         else
