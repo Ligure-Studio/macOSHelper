@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <deployment version="101100" identifier="macosx"/>
+        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -46,6 +46,9 @@
                             </menuItem>
                         </items>
                     </menu>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="macOSHelper" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -144,7 +147,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-PU-w5F" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="366" y="53" width="139" height="53"/>
+                                <rect key="frame" x="364" y="51" width="143" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="yfT-CO-XQV"/>
                                 </constraints>
@@ -168,7 +171,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QOj-hz-XD8" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="147" y="53" width="139" height="53"/>
+                                <rect key="frame" x="145" y="51" width="143" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="A6D-S0-T5I"/>
                                     <constraint firstAttribute="height" constant="50" id="mN0-RN-RqZ"/>
@@ -250,7 +253,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6G2-Cd-r6y" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="251" y="61" width="139" height="53"/>
+                                <rect key="frame" x="249" y="59" width="143" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ThW-GB-r6j"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="Vtm-tt-JOs"/>
@@ -300,7 +303,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-cp-7iS" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="85" y="173" width="470" height="53"/>
+                                <rect key="frame" x="83" y="171" width="474" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="1ig-ae-k9i"/>
                                     <constraint firstAttribute="height" constant="50" id="sfd-Qt-JuA"/>
@@ -325,7 +328,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5MU-45-FMd" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="85" y="67" width="470" height="53"/>
+                                <rect key="frame" x="83" y="65" width="474" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="6cf-FW-Svz"/>
                                     <constraint firstAttribute="height" constant="50" id="Pim-f3-GjM"/>
@@ -347,7 +350,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cgo-2b-AHD" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="85" y="279" width="470" height="53"/>
+                                <rect key="frame" x="83" y="277" width="474" height="57"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GkK-hw-7S4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="fIF-gb-VhS"/>
@@ -418,7 +421,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O37-y5-gKb" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="238" y="61" width="165" height="49"/>
+                                <rect key="frame" x="236" y="59" width="169" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="qnU-Ok-6H8"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="wRs-mg-ral"/>
