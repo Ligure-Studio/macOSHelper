@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <deployment identifier="macosx"/>
+        <deployment version="101100" identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -46,9 +46,6 @@
                             </menuItem>
                         </items>
                     </menu>
-                    <connections>
-                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
-                    </connections>
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="macOSHelper" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
@@ -82,10 +79,10 @@
             <objects>
                 <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="GIm-G8-UOV" sceneMemberID="viewController">
                     <tabViewItems>
-                        <tabViewItem label="主页" image="NSHomeTemplate" id="baR-K8-ZUG"/>
-                        <tabViewItem label="全部来源" identifier="" image="key.fill" catalog="system" id="7Ew-wg-WSQ"/>
-                        <tabViewItem label="App已损坏" identifier="" image="exclamationmark.square.fill" catalog="system" id="YI6-ZG-vu2"/>
-                        <tabViewItem label="其他实用功能" image="ellipsis.circle.fill" catalog="system" id="gZY-ZZ-Y5Z"/>
+                        <tabViewItem label="主页" image="home" id="baR-K8-ZUG"/>
+                        <tabViewItem label="全部来源" identifier="" image="lock" id="7Ew-wg-WSQ"/>
+                        <tabViewItem label="App已损坏" identifier="" image="security" id="YI6-ZG-vu2"/>
+                        <tabViewItem label="其他实用功能" image="setting" id="gZY-ZZ-Y5Z"/>
                     </tabViewItems>
                     <viewControllerTransitionOptions key="transitionOptions" allowUserInteraction="YES"/>
                     <tabView key="tabView" type="noTabsNoBorder" id="vFF-iB-lRj">
@@ -147,7 +144,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-PU-w5F" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="364" y="51" width="143" height="57"/>
+                                <rect key="frame" x="366" y="53" width="139" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="yfT-CO-XQV"/>
                                 </constraints>
@@ -171,7 +168,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QOj-hz-XD8" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="145" y="51" width="143" height="57"/>
+                                <rect key="frame" x="147" y="53" width="139" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="A6D-S0-T5I"/>
                                     <constraint firstAttribute="height" constant="50" id="mN0-RN-RqZ"/>
@@ -253,7 +250,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6G2-Cd-r6y" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="249" y="59" width="143" height="57"/>
+                                <rect key="frame" x="251" y="61" width="139" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ThW-GB-r6j"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="Vtm-tt-JOs"/>
@@ -303,7 +300,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-cp-7iS" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="83" y="171" width="474" height="57"/>
+                                <rect key="frame" x="85" y="173" width="470" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="1ig-ae-k9i"/>
                                     <constraint firstAttribute="height" constant="50" id="sfd-Qt-JuA"/>
@@ -328,7 +325,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5MU-45-FMd" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="83" y="65" width="474" height="57"/>
+                                <rect key="frame" x="85" y="67" width="470" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="6cf-FW-Svz"/>
                                     <constraint firstAttribute="height" constant="50" id="Pim-f3-GjM"/>
@@ -350,7 +347,7 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cgo-2b-AHD" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="83" y="277" width="474" height="57"/>
+                                <rect key="frame" x="85" y="279" width="470" height="53"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GkK-hw-7S4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="fIF-gb-VhS"/>
@@ -421,7 +418,7 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O37-y5-gKb" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="236" y="59" width="169" height="53"/>
+                                <rect key="frame" x="238" y="61" width="165" height="49"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="qnU-Ok-6H8"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="wRs-mg-ral"/>
@@ -463,11 +460,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="NSHomeTemplate" width="24" height="21"/>
-        <image name="ellipsis.circle.fill" catalog="system" width="15" height="15"/>
-        <image name="exclamationmark.square.fill" catalog="system" width="15" height="14"/>
+        <image name="home" width="294" height="294"/>
         <image name="icon" width="512" height="512"/>
-        <image name="key.fill" catalog="system" width="12" height="18"/>
+        <image name="lock" width="440" height="440"/>
+        <image name="security" width="294" height="294"/>
+        <image name="setting" width="294" height="294"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
