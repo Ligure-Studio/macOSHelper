@@ -18,7 +18,7 @@ jobs:
     - name: Build x86_64
       run: xcodebuild -arch x86_64
     - name: Move x86_64
-      run: mkdir tmp && mv macOSHelper.app tmp/macOSHelper.app
+      run: mkdir tmp && mv macOSHelper.app tmp/
     - name: Upload -x86_64
       uses: actions/upload-artifact@v3
       with:
@@ -29,7 +29,7 @@ jobs:
     - name: Build arm64
       run: xcodebuild -arch arm64
     - name: Move arm64
-      run: mkdir tmp && mv macOSHelper.app tmp/macOSHelper.app
+      run: mkdir tmp && mv macOSHelper.app tmp/
     - name: Upload -arm64
       uses: actions/upload-artifact@v3
       with:
