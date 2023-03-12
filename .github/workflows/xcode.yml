@@ -17,15 +17,23 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build x86_64
       run: xcodebuild -arch x86_64
+    - name: Move x86_64
+      run: mkdir tmp && mv macOSHelper.app tmp/macOSHelper.app
     - name: Upload -x86_64
       uses: actions/upload-artifact@v3
       with:
         name: macOSHelper-x86_64
-        path: build/Release/macOSHelper.app
+        path: build/Release/tmp
+    - name: Delete temp folder
+      run: rm -rf tmp
     - name: Build arm64
       run: xcodebuild -arch arm64
+    - name: Move arm64
+      run: mkdir tmp && mv macOSHelper.app tmp/macOSHelper.app
     - name: Upload -arm64
       uses: actions/upload-artifact@v3
       with:
         name: macOSHelper-arm64
-        path: build/Release/macOSHelper.app
+        path: build/Release/tmp
+    - name: Delete temp folder
+      run: rm -rf tmp
