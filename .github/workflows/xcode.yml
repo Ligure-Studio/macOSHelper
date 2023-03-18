@@ -17,23 +17,23 @@ jobs:
     - uses: actions/checkout@v3
     - name: Build x86_64
       run: xcodebuild -arch x86_64
-    - name: Move x86_64
-      run: mkdir tmp && mv build/Release/macOSHelper.app tmp/
+    - name: Create x86_64 dmg
+      run: create-dmg --volname "macOSHelper" --window-size 400 661 --volicon "dmgicon.icns" --background "bg@4x.jpg" --icon-size 60 --icon "macOSHelper.app" 50 230 --hide-extension "macOSHelper.app" --app-drop-link 225 230 "macOSHelper_x86_64.dmg" "build/Release/macOSHelper.app"
     - name: Upload -x86_64
       uses: actions/upload-artifact@v3
       with:
         name: macOSHelper-x86_64
-        path: tmp
+        path: macOSHelper_x86_64.dmg
     - name: Delete temp folder
       run: rm -rf tmp
     - name: Build arm64
       run: xcodebuild -arch arm64
-    - name: Move arm64
-      run: mkdir tmp && mv build/Release/macOSHelper.app tmp/
+        - name: Create x86_64 dmg
+      run: create-dmg --volname "macOSHelper" --window-size 400 661 --volicon "dmgicon.icns" --background "bg@4x.jpg" --icon-size 60 --icon "macOSHelper.app" 50 230 --hide-extension "macOSHelper.app" --app-drop-link 225 230 "macOSHelper_arm64.dmg" "build/Release/macOSHelper.app"
     - name: Upload -arm64
       uses: actions/upload-artifact@v3
       with:
         name: macOSHelper-arm64
-        path: tmp
+        path: macOSHelper_arm64.dmg
     - name: Delete temp folder
       run: rm -rf tmp
