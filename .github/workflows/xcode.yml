@@ -28,7 +28,7 @@ jobs:
       run: rm -rf tmp
     - name: Build arm64
       run: xcodebuild -arch arm64
-        - name: Create x86_64 dmg
+    - name: Create x86_64 dmg
       run: create-dmg --volname "macOSHelper" --window-size 400 661 --volicon "dmgicon.icns" --background "bg@4x.jpg" --icon-size 60 --icon "macOSHelper.app" 50 230 --hide-extension "macOSHelper.app" --app-drop-link 225 230 "macOSHelper_arm64.dmg" "build/Release/macOSHelper.app"
     - name: Upload -arm64
       uses: actions/upload-artifact@v3
