@@ -24,8 +24,6 @@ jobs:
       with:
         name: macOSHelper-x86_64
         path: macOSHelper_x86_64.dmg
-    - name: Delete temp folder
-      run: rm -rf tmp
     - name: Build arm64
       run: xcodebuild -arch arm64
     - name: Create x86_64 dmg
@@ -35,5 +33,3 @@ jobs:
       with:
         name: macOSHelper-arm64
         path: macOSHelper_arm64.dmg
-    - name: Delete temp folder
-      run: rm -rf tmp
