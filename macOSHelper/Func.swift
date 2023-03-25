@@ -50,8 +50,8 @@ class RoundedColoredButton: NSButton {
     @IBInspectable var cornerRadius: CGFloat = 8
     
     override func draw(_ dirtyRect: NSRect) {
-        super.draw(dirtyRect)
         configure()
+        super.draw(dirtyRect)
     }
     
     func configure() {

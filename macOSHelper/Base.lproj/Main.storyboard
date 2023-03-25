@@ -147,11 +147,11 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gMI-PU-w5F" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="366" y="53" width="139" height="53"/>
+                                <rect key="frame" x="367" y="55" width="137" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="yfT-CO-XQV"/>
                                 </constraints>
-                                <buttonCell key="cell" type="squareTextured" title="关闭全部来源" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="6R3-5w-nTK">
+                                <buttonCell key="cell" type="squareTextured" title="关闭全部来源" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="6R3-5w-nTK">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -161,7 +161,7 @@
                                         <color key="value" name="AccentColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="27"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
                                         <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -172,12 +172,12 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QOj-hz-XD8" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="147" y="53" width="139" height="53"/>
+                                <rect key="frame" x="148" y="55" width="137" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="A6D-S0-T5I"/>
                                     <constraint firstAttribute="height" constant="50" id="mN0-RN-RqZ"/>
                                 </constraints>
-                                <buttonCell key="cell" type="squareTextured" title="开启全部来源" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="cDm-Ae-lS0">
+                                <buttonCell key="cell" type="squareTextured" title="开启全部来源" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="cDm-Ae-lS0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -187,7 +187,7 @@
                                         <color key="value" name="AccentColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="27"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
                                         <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -255,12 +255,12 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6G2-Cd-r6y" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="251" y="61" width="139" height="53"/>
+                                <rect key="frame" x="252" y="63" width="137" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ThW-GB-r6j"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="Vtm-tt-JOs"/>
                                 </constraints>
-                                <buttonCell key="cell" type="squareTextured" title="解决“已损坏”问题" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Ltk-RD-G9z">
+                                <buttonCell key="cell" type="squareTextured" title="解决“已损坏”问题" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="Ltk-RD-G9z">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -270,7 +270,7 @@
                                         <color key="value" name="AccentColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="27"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
                                         <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -306,12 +306,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-cp-7iS" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="85" y="173" width="470" height="53"/>
+                                <rect key="frame" x="86" y="175" width="468" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="1ig-ae-k9i"/>
                                     <constraint firstAttribute="height" constant="50" id="sfd-Qt-JuA"/>
                                 </constraints>
-                                <buttonCell key="cell" type="squareTextured" title="取消四位密码限制" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="nvh-ye-uD0">
+                                <buttonCell key="cell" type="squareTextured" title="取消四位密码限制" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="nvh-ye-uD0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system" size="20"/>
                                 </buttonCell>
@@ -321,7 +321,7 @@
                                         <color key="value" name="AccentColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="27"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
                                         <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -332,12 +332,12 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5MU-45-FMd" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="85" y="67" width="470" height="53"/>
+                                <rect key="frame" x="86" y="69" width="468" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="6cf-FW-Svz"/>
                                     <constraint firstAttribute="height" constant="50" id="Pim-f3-GjM"/>
                                 </constraints>
-                                <buttonCell key="cell" type="squareTextured" title="重置Dock(仅在出现异常时需要使用)" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Pjd-mn-i9z">
+                                <buttonCell key="cell" type="squareTextured" title="重置Dock(仅在出现异常时需要使用)" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="Pjd-mn-i9z">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system" size="20"/>
                                 </buttonCell>
@@ -347,7 +347,7 @@
                                         <color key="value" name="systemRedColor" catalog="System" colorSpace="catalog"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="27"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
@@ -355,12 +355,12 @@
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cgo-2b-AHD" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="85" y="279" width="470" height="53"/>
+                                <rect key="frame" x="86" y="281" width="468" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="GkK-hw-7S4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="fIF-gb-VhS"/>
                                 </constraints>
-                                <buttonCell key="cell" type="squareTextured" title="复制HomeBrew安装命令" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="l4J-dM-6xV">
+                                <buttonCell key="cell" type="squareTextured" title="复制HomeBrew安装命令" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="l4J-dM-6xV">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system" size="20"/>
                                 </buttonCell>
@@ -370,7 +370,7 @@
                                         <color key="value" name="AccentColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="27"/>
+                                        <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
                                         <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -427,14 +427,14 @@
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="O37-y5-gKb" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="238" y="61" width="165" height="49"/>
+                                <rect key="frame" x="239" y="63" width="163" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="46" id="qnU-Ok-6H8"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="163" id="wRs-mg-ral"/>
                                 </constraints>
-                                <buttonCell key="cell" type="squareTextured" title="官方网站" bezelStyle="texturedSquare" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Z4h-bt-9er">
+                                <buttonCell key="cell" type="smallSquare" title="官方网站" bezelStyle="smallSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="Z4h-bt-9er">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="17"/>
+                                    <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <color key="bezelColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 <userDefinedRuntimeAttributes>
@@ -442,10 +442,10 @@
                                         <color key="value" name="AccentColor"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="25"/>
+                                        <real key="value" value="23"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
-                                        <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" red="0.19913301496434022" green="0.47227994989901467" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
