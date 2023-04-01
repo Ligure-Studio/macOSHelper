@@ -111,7 +111,7 @@
         <!--全部来源-->
         <scene sceneID="dWL-JF-cOu">
             <objects>
-                <viewController title="全部来源" id="8zk-FY-lbE" sceneMemberID="viewController">
+                <viewController title="全部来源" id="8zk-FY-lbE" customClass="ViewController" customModule="macOSHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="gv3-Xw-NeT">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -168,7 +168,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="关闭全部来源:" target="lnN-pi-Urc" id="BwS-lm-Mli"/>
+                                    <action selector="关闭全部来源:" target="8zk-FY-lbE" id="Re4-en-Bkt"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="QOj-hz-XD8" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
@@ -194,7 +194,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="开启全部来源:" target="lnN-pi-Urc" id="Zny-wr-BaC"/>
+                                    <action selector="开启全部来源:" target="8zk-FY-lbE" id="skN-l0-sal"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -222,7 +222,7 @@
         <!--App已损坏-->
         <scene sceneID="aNP-Da-o5b">
             <objects>
-                <viewController title="App已损坏" id="V6m-KD-eAC" sceneMemberID="viewController">
+                <viewController title="App已损坏" id="V6m-KD-eAC" customClass="ViewController" customModule="macOSHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="4pX-yx-Hve">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -277,7 +277,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="解决已损坏问题:" target="oZZ-K1-QBX" id="Y9O-CP-8A2"/>
+                                    <action selector="解决已损坏问题:" target="V6m-KD-eAC" id="Vtq-WT-kIS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -300,7 +300,7 @@
         <!--其他实用功能-->
         <scene sceneID="Wgw-hu-OPl">
             <objects>
-                <viewController title="其他实用功能" id="SnF-xC-VTI" sceneMemberID="viewController">
+                <viewController title="其他实用功能" id="SnF-xC-VTI" customClass="ViewController" customModule="macOSHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="pm8-9C-D2v">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -328,7 +328,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="取消四位密码限制:" target="ZRI-D9-lqI" id="tT1-ZQ-2QU"/>
+                                    <action selector="取消四位密码限制:" target="SnF-xC-VTI" id="uNe-vF-Uzf"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5MU-45-FMd" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
@@ -351,7 +351,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="重置Dock:" target="ZRI-D9-lqI" id="XIs-jX-ud6"/>
+                                    <action selector="重置Dock:" target="SnF-xC-VTI" id="aaf-Rh-PPL"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cgo-2b-AHD" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
@@ -377,7 +377,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="复制HomeBrew安装命令:" target="ZRI-D9-lqI" id="Ebt-Xj-eNv"/>
+                                    <action selector="复制HomeBrew安装命令:" target="SnF-xC-VTI" id="JzF-0N-GAr"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -402,7 +402,7 @@
         <!--主页-->
         <scene sceneID="bcs-dI-reY">
             <objects>
-                <viewController title="主页" id="KVD-wt-swU" sceneMemberID="viewController">
+                <viewController title="主页" id="KVD-wt-swU" customClass="ViewController" customModule="macOSHelper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="7sg-CV-Odh">
                         <rect key="frame" x="0.0" y="0.0" width="640" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -449,7 +449,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="官网:" target="bHT-33-xkP" id="fWE-E5-iAl"/>
+                                    <action selector="官网:" target="KVD-wt-swU" id="P0C-op-zCe"/>
                                 </connections>
                             </button>
                         </subviews>
