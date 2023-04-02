@@ -305,12 +305,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="640" height="400"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-cp-7iS" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="86" y="175" width="468" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="1ig-ae-k9i"/>
-                                    <constraint firstAttribute="height" constant="50" id="sfd-Qt-JuA"/>
-                                </constraints>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eEt-cp-7iS" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="44" y="72" width="229" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="squareTextured" title="取消四位密码限制" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="nvh-ye-uD0">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system" size="20"/>
@@ -331,15 +328,12 @@
                                     <action selector="取消四位密码限制:" target="SnF-xC-VTI" id="uNe-vF-Uzf"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5MU-45-FMd" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="86" y="69" width="468" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="6cf-FW-Svz"/>
-                                    <constraint firstAttribute="height" constant="50" id="Pim-f3-GjM"/>
-                                </constraints>
-                                <buttonCell key="cell" type="squareTextured" title="重置Dock(仅在出现异常时需要使用)" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="Pjd-mn-i9z">
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5MU-45-FMd" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="370" y="281" width="229" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="squareTextured" title="重置Dock" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="Pjd-mn-i9z">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="20"/>
+                                    <font key="font" size="20" name=".PingFangSC-Regular"/>
                                 </buttonCell>
                                 <color key="bezelColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <userDefinedRuntimeAttributes>
@@ -349,20 +343,20 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="25"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                        <color key="value" red="1" green="0.28083222814061859" blue="0.16810966919229697" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="重置Dock:" target="SnF-xC-VTI" id="aaf-Rh-PPL"/>
                                 </connections>
                             </button>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Cgo-2b-AHD" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
-                                <rect key="frame" x="86" y="281" width="468" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="GkK-hw-7S4"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="137" id="fIF-gb-VhS"/>
-                                </constraints>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cgo-2b-AHD" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="44" y="281" width="229" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="squareTextured" title="复制HomeBrew安装命令" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="l4J-dM-6xV">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system" size="20"/>
+                                    <font key="font" metaFont="system" size="18"/>
                                 </buttonCell>
                                 <color key="bezelColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <userDefinedRuntimeAttributes>
@@ -380,19 +374,30 @@
                                     <action selector="复制HomeBrew安装命令:" target="SnF-xC-VTI" id="JzF-0N-GAr"/>
                                 </connections>
                             </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8mz-iu-X8b" customClass="RoundedColoredButton" customModule="macOSHelper" customModuleProvider="target">
+                                <rect key="frame" x="370" y="72" width="229" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="squareTextured" title="安装Xcode CLT" bezelStyle="texturedSquare" alignment="center" imageScaling="proportionallyDown" inset="2" id="8kM-7j-PhL">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" size="20" name=".PingFangSC-Regular"/>
+                                </buttonCell>
+                                <color key="bezelColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="bgColor">
+                                        <color key="value" name="AccentColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="highlightColor">
+                                        <color key="value" red="0.20709507199999999" green="0.48337144389999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="安装XcodeCLT:" target="SnF-xC-VTI" id="aET-s3-J3f"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <constraints>
-                            <constraint firstItem="Cgo-2b-AHD" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eEt-cp-7iS" secondAttribute="leading" id="4CH-eA-PVd"/>
-                            <constraint firstItem="5MU-45-FMd" firstAttribute="top" secondItem="eEt-cp-7iS" secondAttribute="bottom" constant="56" id="8aK-Sa-MV2"/>
-                            <constraint firstItem="eEt-cp-7iS" firstAttribute="leading" secondItem="5MU-45-FMd" secondAttribute="leading" id="FwG-A4-xoW"/>
-                            <constraint firstItem="Cgo-2b-AHD" firstAttribute="leading" secondItem="pm8-9C-D2v" secondAttribute="leading" constant="86" id="JLB-DO-wTq"/>
-                            <constraint firstItem="eEt-cp-7iS" firstAttribute="top" secondItem="Cgo-2b-AHD" secondAttribute="bottom" constant="56" id="MoN-C5-hof"/>
-                            <constraint firstItem="Cgo-2b-AHD" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eEt-cp-7iS" secondAttribute="trailing" id="Vmo-cX-qdm"/>
-                            <constraint firstItem="Cgo-2b-AHD" firstAttribute="centerX" secondItem="pm8-9C-D2v" secondAttribute="centerX" id="jFF-Pa-Lgj"/>
-                            <constraint firstItem="eEt-cp-7iS" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Cgo-2b-AHD" secondAttribute="trailing" id="mLH-hf-nEC"/>
-                            <constraint firstItem="eEt-cp-7iS" firstAttribute="centerY" secondItem="pm8-9C-D2v" secondAttribute="centerY" id="mbH-BP-a25"/>
-                            <constraint firstItem="eEt-cp-7iS" firstAttribute="trailing" secondItem="5MU-45-FMd" secondAttribute="trailing" id="r6e-Za-8fd"/>
-                        </constraints>
                     </view>
                 </viewController>
                 <customObject id="ZRI-D9-lqI" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

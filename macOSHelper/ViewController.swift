@@ -55,6 +55,11 @@ class ViewController: NSViewController {
         }
     }
     
+    @IBAction func 安装XcodeCLT(_ sender: NSButton) {
+        alert("提示", "如关闭此窗口后未弹出安装窗口，可能您已安装Xcode CLT")
+        runScript("xcode-select --install")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
